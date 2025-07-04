@@ -23,6 +23,8 @@ namespace Persistence
             modelBuilder.Entity<PostTag>()
                 .HasKey(pt => new { pt.PostId, pt.TagId });
 
+            modelBuilder.Entity<Like>().HasKey(l => new { l.UserId, l.PostId });
+
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
         }

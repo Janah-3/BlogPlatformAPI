@@ -19,7 +19,7 @@ namespace BlogPlatformAPI
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddDbContext<Persistence.AppDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("BlogPlatformDbConnection")));
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
