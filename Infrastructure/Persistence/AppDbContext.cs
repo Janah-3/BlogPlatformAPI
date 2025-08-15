@@ -36,6 +36,7 @@ namespace Persistence
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Tag> tags { get; set; }
         public DbSet<PostTag> PostTags { get; set; }
+        public DbSet<PostImage> PostImages { get; set; }
 
     }
 }
