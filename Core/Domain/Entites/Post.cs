@@ -8,6 +8,7 @@ namespace Domain.Entites
 {
     public class Post : BaseEntity<int>
     {
+
         public string Content { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
